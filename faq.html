@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Signin</title>
+    <link href="assets/css/styles.css" rel="stylesheet" />
+
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <link href="assets/css/slick.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />-->
+    <script data-search-pseudo-elements="" defer="" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Navbar-->
+
+    <nav class="navbar navbar-marketingg navbar-expand-lg navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <i class="fas fa-bars"></i>
+            </button>
+            
+            <a class="navbar-brand text-white" href="index.html">
+                <img src="assets/images/Logo.svg" alt="">
+            </a>
+            
+                <a class="navbar-toggler fr login_link fi fw-500 color-1c f-z-14" href="#" data-bs-toggle="modal" data-bs-target="#modal_signin">
+                    Sign in
+                </a>
+            
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                
+                <button class="navbar-toggler btn_close_nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <i class="fas fa-times"></i>
+                </button>
+                
+                <ul class="navbar-nav mx-auto ml-58">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sample Report</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+                </ul>
+                <ul class="d-flex ms-auto mb-0 ml-0">
+                    <a class="login_link fi fw-500 color-1c f-z-14" href="#" data-bs-toggle="modal" data-bs-target="#modal_signin">
+                        Sign in
+                    </a>
+                    <div class="js">
+                        <div class="language-picker js-language-picker" data-trigger-class="btn btn--subtle">
+                            <form action="" class="language-picker__form">
+                                <label for="language-picker-select">Select your language</label>
+                                <select name="language-picker-select" id="language-picker-select">
+                                    <option lang="en" value="english" selected>English</option>
+                                    <option lang="ar" value="arabic">Arabic</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+                    <a class="btn_head btn-teal fi fw-600 color-1c f-z-16" href="#">
+                        Get a report
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Header-->
+
+    <!--faq sec-->
+    <div class="faq_section_pricing faq_page fl wf">
+        <div class="container">
+            <div class="padd_lft_rgt">
+            <h3>Frequently Asked Questions </h3>
+            <div class="accordion accordian_content" id="accordionExample">
+                <h4>About Vehicle Report</h4>
+                
+                <div class="page_faq_bg">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                How will a Vehicle Report help me?
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>The Vehicle Report gives you all the important information you need to decide whether to buy the vehicle or not, and at what price. It gives you relevant details about the vehicle specifications, its history and the current market value. It also gives you an estimation of the total cost of ownership. </p>
+                                <p>With this information you can negotiate better or avoid costly mistakes, like buying a car that is actually from a different production year, or buying a car that has been imported and had some serious previous damages, or buying a vehicle for much more than it’s worth.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                How accurate is the data in the Vehicle Report?
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>We are confident to say that our data is the most accurate, by quite a long way. We have been researching vehicle specifications and market values for over a decade. We collect, clean, normalize, aggregate, compare and analyze millions of data-points per day. In fact, we collect more information, from a wider variety of sources than any other service. We also use artificial intelligence to identify movement in prices and we employ in-house researchers who check and verify our data everyday to make sure that we can give you the most accurate and comprehensive data about your vehicle.</p>
+                                <p>As is always the case when using external sources some errors may exist. We try to minimize this by using many different sources and enforcing strict quality controls. If you do find some errors in our data please let us know, and we’ll be sure to correct those immediately, and of course provide you with a full refund for that report.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                How much does a Vehicle Report cost?    
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    One Vehicle Report costs AED 79<br>
+                                    If you buy 3 reports, you pay just AED 69 per report<br>
+                                    If you buy 5 reports, you pay just AED 59 per report<br>
+                                    If you buy 10 reports, you pay just AED 49 per report<br>
+                                    If you buy 20 reports, you pay just AED 39 per report<br>
+                                    And if you buy 50 reports, you pay just AED 35 per report
+                                </p>
+                                <p>* All prices are inclusive of VAT</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                Is it safe to make purchase on this website?    
+                            </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Absolutely. We have secured our website and payment gateway and encrypt all your information to protect it from any unauthorized access.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                Do you store my credit card information?    
+                            </button>
+                        </h2>
+                        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>No. We do not store your credit card information in our servers, nor do we intend to. The card details you input in our website are directly transferred to the payment merchant using SSL encryption.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                How long will my Vehicle Report remain accessible?   
+                            </button>
+                        </h2>
+                        <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>We will keep the link to your vehicle report active for 30 days. You can also access it through the Vehicle Report website, in the ‘My Account’.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                How long it takes to get the report?    
+                            </button>
+                        </h2>
+                        <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>We need a couple of details before we generate your report. Completing this information takes no more than 2 minutes. After we have received this information and we have confirmed your payment we generate the report instantaneously.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                I have not received the report details after purchase, where can I get the details now?    
+                            </button>
+                        </h2>
+                        <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>You can find your purchased report(s) in the ‘My Account’ section of our website. Go to your account page to see the details.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <h4>Account</h4>
+                    <div class="page_faq_bg">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                    How can I get my login details?
+                                </button>
+                            </h2>
+                            <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>In order to login to the website you need to register first. Please click on this link to go to the registration page.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                    How can I change my password?
+                                </button>
+                            </h2>
+                            <div id="collapse10" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>You may go to the My Account section from top navigation where you will find the Change Password option. Alternatively, you can click on this link to go to change password page (applies to already logged in users).</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                    I have forgotten my password, what can I do now?
+                                </button>
+                            </h2>
+                            <div id="collapse11" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>You can go to this link to reset your password. Provide your account email-address and our system will send you an email with instructions to reset your password.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                                    Where can I see my purchased reports?
+                                </button>
+                            </h2>
+                            <div id="collapse12" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>You may go to My Account page to see your purchased reports.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                                    I did not receive the email/phone verification code. What can I do now?
+                                </button>
+                            </h2>
+                            <div id="collapse13" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>You can re-send the authentication email/code to your email/phone from My Profile page. If you do not receive it after multiple retries then contact our support using this link. We will get back to you as soon as possible.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                                    How do I contact VehicleReport customer service?
+                                </button>
+                            </h2>
+                            <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>You can click on this link to fill in our contact form. Our team will get in touch with you as soon as possible.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                
+                <h4>Vehicle Identification Number (VIN) and Specifications</h4>
+                    <div class="page_faq_bg">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                                    What is a VIN?
+                                </button>
+                            </h2>
+                            <div id="collapse15" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>The vehicle identification number (VIN) is composed of 17 characters (digits and capital letters) and acts as a unique identifier for the vehicle.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                                    Where can I find the VIN?
+                                </button>
+                            </h2>
+                            <div id="collapse16" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>In most cases, you will find the VIN below the front windshield, on the dashboard at the driver's side. You may also find the VIN number on the driver's side door pillar. You can often also find it on your vehicle’s registration card. Although the VIN there may have been incorrectly spelled while during the data entry. We recommend checking it on the vehicle itself.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                                    Is the VIN required to get the report?
+                                </button>
+                            </h2>
+                            <div id="collapse17" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>The VIN is not a requirement to get the report. However, we strongly recommend providing it as we use it to check external databases for any record of import, accidents and damages. These events may have a direct impact on the vehicles market value.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                                    How do I confirm the exact trim/specification of my vehicle, if it is not confirmed by the system?
+                                </button>
+                            </h2>
+                            <div id="collapse18" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>There are multiple ways to confirm the exact trim/spec of your vehicle.</p>
+                                    <p>The trim/ specifications are usually listed in the vehicle’s owner manual.<br>
+                                        The original invoice of the vehicle usually mention the trim/ specifications.<br>
+                                        The trim/ specifications are also often mentioned on the vehicle.<br>
+                                        If you can confirm the engine size, horsepower, number of seats and doors you may be able to confirm the trim by doing a quick search online.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+                                    How do I use the Total Cost of Ownership (TCO) section?
+                                </button>
+                            </h2>
+                            <div id="collapse19" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Total Cost of Ownership (TCO) is a comprehensive tool designed for VehicleReport users to calculate the total monthly expense incurred if they use the vehicle in question. This section allows you to change and set the major expense points according to your usage and driving trend and the result is a total cost that would be required on a monthly basis to own this vehicle.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                <h6>Is your question not answered? Send us a <a href="#">message here!</a></h6>
+
+                    
+                
+            
+            
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--next car deal-->
+    <div class="next_car_deal fl wf">
+        <div class="container">
+            <div class="next_car_deal_content fl wf">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h5>Ready to elevate your next car <br>deal with <span>Vehicle Report</span></h5>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="data_buttons fl wf">
+                            <a href="#" class="report_btn">Get a full report for AED 79</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+   <!--footer-->
+    <div class="footer_sec fl wf">
+        <div class="container top_footer_col">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-3 footr_first_col">
+                            <div class="footer_col">
+                                <a href="#" class="footer_logo">
+                                    <img src="assets/images/logo.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer_col">
+                                <h6>Report</h6>
+                                <ul>
+                                    <li><a href="#">Get a report</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Sample report</a></li>
+                                    <li><a href="#">Buying tips</a></li>
+                                    <li><a href="#">Used market report</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="footer_col">
+                                <h6>Support</h6>
+                                <ul>
+                                    <li><a href="#">VIN check</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="footer_col">
+                                <h6>Follow us on</h6>
+                                <ul>
+                                    <li><a href="#"><img src="assets/images/facebook.png"> Facebook</a></li>
+                                    <li><a href="#"><img src="assets/images/linkedin.png"> LinkedIn</a></li>
+                                    <li><a href="#"><img src="assets/images/twitter.png"> X</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="footer_col">
+                                <h6>Secure payment</h6>
+                                <ul>
+                                    <li><a href="#"><img src="assets/images/Visa.png"> Visa</a></li>
+                                    <li><a href="#"><img src="assets/images/Mastercard.png"> Mastercard</a></li>
+                                    <li><a href="#"><img src="assets/images/DinersClub.png"> Diners Club</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 footr_last_col">
+                    <div class="footer_col">
+                        <h6>Join our newsletter</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur. Egestas semper ut lectus auctor lacinia orci odio enim.</p>
+                        <input type="text" class="form-control" placeholder="Your mail">
+                        <button type="button" class="">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright_sec fl wf">
+            <div class="container">
+                <div class="copyright_inner fl wf">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>© Copyright 2024 - Carfacts</p>
+                            <ul>
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#">Terms of service</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="copyright_col">
+                                <p>Powered by:</p>
+                                <img src="assets/images/powerdby_1.png">
+                                <img src="assets/images/powerdby_2.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="assets/js/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/language-select.js" type="text/javascript"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            disable: 'mobile',
+            duration: 600,
+            once: true,
+        });
+    </script>
+    <script>
+        var video = document.getElementById("bg-video");
+        var playPauseBtn = document.getElementById("playPauseBtn");
+
+        playPauseBtn.addEventListener("click", function() {
+            if (video.paused) {
+                video.play();
+                playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+            } else {
+                video.pause();
+                playPauseBtn.innerHTML = '<i class="far fa-play-circle"></i>';
+            }
+        });
+    </script>
+    
+    <script type="text/javascript">
+        $(document).on('ready', function() {
+            $(".brands_slick").slick({
+                dots: false,
+                infinite: true,
+                prevArrow: false,
+    nextArrow: false,
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                centerMode: true,
+            });
+
+        });
+    </script>
+    
+    <script type="text/javascript">
+        $(document).on('ready', function() {
+            $(".testimonials_slick").slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            });
+
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

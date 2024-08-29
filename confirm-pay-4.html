@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Signin</title>
+    <link href="assets/css/styles.css" rel="stylesheet" />
+
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <link href="assets/css/slick.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />-->
+    <script data-search-pseudo-elements="" defer="" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Navbar-->
+
+    <nav class="navbar navbar-marketingg navbar-expand-lg navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <i class="fas fa-bars"></i>
+            </button>
+            
+            <a class="navbar-brand text-white" href="index.html">
+                <img src="assets/images/Logo.svg" alt="">
+            </a>
+            
+                <a class="navbar-toggler fr login_link fi fw-500 color-1c f-z-14" href="#" data-bs-toggle="modal" data-bs-target="#modal_signin">
+                    Sign in
+                </a>
+            
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                
+                <button class="navbar-toggler btn_close_nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <i class="fas fa-times"></i>
+                </button>
+                
+                <ul class="navbar-nav mx-auto ml-58">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sample Report</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+                </ul>
+                <ul class="d-flex ms-auto mb-0 ml-0">
+                    <a class="login_link fi fw-500 color-1c f-z-14" href="#" data-bs-toggle="modal" data-bs-target="#modal_signin">
+                        Sign in
+                    </a>
+                    <div class="js">
+                        <div class="language-picker js-language-picker" data-trigger-class="btn btn--subtle">
+                            <form action="" class="language-picker__form">
+                                <label for="language-picker-select">Select your language</label>
+                                <select name="language-picker-select" id="language-picker-select">
+                                    <option lang="en" value="english" selected>English</option>
+                                    <option lang="ar" value="arabic">Arabic</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+                    <a class="btn_head btn-teal fi fw-600 color-1c f-z-16" href="#">
+                        Get a report
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Header-->
+
+    <!--confirm pay section-->
+    <div class="confirm_pay_section fl wf">
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        
+                        <div class="information_form fl wf">
+                            
+                            <div class="padd_lft_rgt3">
+                                <h2>Get a full report</h2>
+                            <h3>Vehicle information</h3>
+                                <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form_field">
+                                        <label>VIN</label>
+                                        <input type="email" class="form-control" placeholder="Enter VIN">
+                                    </div>
+                                    
+                                    <div class="form_field">
+                                        <label>Year</label>
+                                        <select class="form-control">
+                                            <option>2017</option>
+                                            <option>2018</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form_field">
+                                        <label>Make</label>
+                                        <select class="form-control">
+                                            <option>Chevrolet</option>
+                                            <option>Suzuki</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form_field">
+                                        <label>Model</label>
+                                        <select class="form-control">
+                                            <option>Tahoe Special Service Veh</option>
+                                            <option>Tahoe Special Service Veh new</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <h3>We will need more information about this vehicle</h3>
+                                    
+                                    <div class="form_field">
+                                        <label class="fl wf">Trim <a href="" class="fr wht_trim" data-bs-toggle="modal" data-bs-target="#trim_modal">What is trim?</a></label>
+                                        <select class="form-control">
+                                            <option>Select trim</option>
+                                            <option>trim 1</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form_field">
+                                        <label>Odometer reading </label>
+                                        <input type="email" class="form-control" placeholder="Enter milage in kilometres ">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            </div>
+                            
+                            <div class="form_field fl wf m_b_0">
+                            <label class="text-center fl wf">Please choose the option that best describes your vehicle from the list below</label>
+                            </div>
+                            
+                             <div class="table_dashbaord_custom fl wf">
+                                <div class="table-responsive">
+                                    <table class="table table-responsive-md table_control">
+                                        <thead>
+                                            <tr>
+                                                <th>Select</th>
+                                                <th>Body</th>
+                                                <th>Doors</th>
+                                                <th>Seats</th>
+                                                <th>Engine</th>
+                                                <th>Transmission</th>
+                                                <th>Fuel</th>
+                                                <th>Hp</th>
+                                                <th class="last_icons text-right">Fine drive</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <input type="radio">
+                                                </td>
+
+
+                                                <td>
+                                                    SUV
+                                                </td>
+
+                                                <td>
+                                                    5 doors
+                                                </td>
+
+                                                <td>
+                                                    7 seats
+                                                </td>
+
+                                                <td>
+                                                    3.8  L
+                                                </td>
+
+                                                <td>
+                                                    Automatic
+                                                </td>
+
+                                                <td>
+                                                    Petrol
+                                                </td>
+                                                
+                                                <td>
+                                                    247 Hp
+                                                </td>
+                                                
+                                                <td>
+                                                    All wheel drive
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>
+                                                    <input type="radio">
+                                                </td>
+
+
+                                                <td>
+                                                    SUV
+                                                </td>
+
+                                                <td>
+                                                    5 doors
+                                                </td>
+
+                                                <td>
+                                                    7 seats
+                                                </td>
+
+                                                <td>
+                                                    3.8  L
+                                                </td>
+
+                                                <td>
+                                                    Automatic
+                                                </td>
+
+                                                <td>
+                                                    Petrol
+                                                </td>
+                                                
+                                                <td>
+                                                    247 Hp
+                                                </td>
+                                                
+                                                <td>
+                                                    All wheel drive
+                                                </td>
+                                            </tr>
+
+                                            
+                                            <tr>
+                                                <td>
+                                                    <input type="radio">
+                                                </td>
+
+
+                                                <td>
+                                                    SUV
+                                                </td>
+
+                                                <td>
+                                                    5 doors
+                                                </td>
+
+                                                <td>
+                                                    7 seats
+                                                </td>
+
+                                                <td>
+                                                    3.8  L
+                                                </td>
+
+                                                <td>
+                                                    Automatic
+                                                </td>
+
+                                                <td>
+                                                    Petrol
+                                                </td>
+                                                
+                                                <td>
+                                                    247 Hp
+                                                </td>
+                                                
+                                                <td>
+                                                    All wheel drive
+                                                </td>
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            
+                    </div>
+                            
+                            <div class="padd_lft_rgt3">
+                                <div class="form_field">
+                                    <label>Odometer reading </label>
+                                    <input type="email" class="form-control" placeholder="Enter milage in kilometres ">
+                                </div>
+                            
+                            
+                            <h3 class="fl wf">Are you a buyer or a seller?</h3>
+                            
+                            <div class="row buyer_seller_col">
+                                <div class="col-md-6">
+                                    <div class="card_seelct_card">
+                                        <input type="radio">
+                                        <p>I am a buyer</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card_seelct_card">
+                                        <input type="radio">
+                                        <p>I am a seller</p>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                                 <h3 class="fl wf">Choose a pack</h3>
+                                 <div class="form_field">
+                                    <label>Use your remaining credits</label>
+                                </div>
+                                <button type="submit" class="btn_deafult wf fl">Get ull freport</button>
+                                
+                                 <div class="form_field my-4">
+                                    <label class="fl wf text-center">or</label>
+                                </div>
+                                
+                                <div class="pricing_tabs fl wf">
+                <ul class="nav nav-tabs nav-justified" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="justified-tab-0" data-bs-toggle="tab" href="#justified-tabpanel-0" role="tab" aria-controls="justified-tabpanel-0" aria-selected="true"> Single report </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="justified-tab-1" data-bs-toggle="tab" href="#justified-tabpanel-1" role="tab" aria-controls="justified-tabpanel-1" aria-selected="false"> 3 pack <span>-10%</span> </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="justified-tab-2" data-bs-toggle="tab" href="#justified-tabpanel-2" role="tab" aria-controls="justified-tabpanel-2" aria-selected="false"> 5 pack <span>-15%</span> </a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="tab-content">
+                    <div class="tab-pane active" id="justified-tabpanel-0" role="tabpanel" aria-labelledby="justified-tab-0">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="single_report_card fl wf">
+                                    <h4>79 AED</h4>
+                                    <p>Per report</p>
+                                    <div class="buy_btn_card">
+                                        <p>You pay 79 AED </p>
+                                        <a href="#" class="report_btn">Buy single report</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="justified-tabpanel-1" role="tabpanel" aria-labelledby="justified-tab-1">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="single_report_card fl wf">
+                                    <h4>69 AED <span>-10%</span></h4>
+                                    <p>Per report</p>
+                                    <div class="buy_btn_card">
+                                        <p>You pay 207 AED  <span class="line-through">237 AED</span></p>
+                                        <a href="#" class="report_btn">Buy 3 pack</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="justified-tabpanel-2" role="tabpanel" aria-labelledby="justified-tab-2">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="single_report_card fl wf">
+                                    <h4>59 AED <span>-15%</span></h4>
+                                    <p>Per report</p>
+                                    <div class="buy_btn_card">
+                                        <p>You pay 207 AED  <span class="line-through">237 AED</span></p>
+                                        <a href="#" class="report_btn">Buy 5 pack</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                                <div class="terms_conditions fl wf">
+                                        <p>To use your existing credits,  <a href="#">sign in</a>.</p>
+                                    </div>
+                                
+                                
+                    </div>
+                            
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+   <!--footer-->
+    <div class="footer_sec fl wf">
+        <div class="container top_footer_col">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-3 footr_first_col">
+                            <div class="footer_col">
+                                <a href="#" class="footer_logo">
+                                    <img src="assets/images/logo.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer_col">
+                                <h6>Report</h6>
+                                <ul>
+                                    <li><a href="#">Get a report</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Sample report</a></li>
+                                    <li><a href="#">Buying tips</a></li>
+                                    <li><a href="#">Used market report</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="footer_col">
+                                <h6>Support</h6>
+                                <ul>
+                                    <li><a href="#">VIN check</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="footer_col">
+                                <h6>Follow us on</h6>
+                                <ul>
+                                    <li><a href="#"><img src="assets/images/facebook.png"> Facebook</a></li>
+                                    <li><a href="#"><img src="assets/images/linkedin.png"> LinkedIn</a></li>
+                                    <li><a href="#"><img src="assets/images/twitter.png"> X</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="footer_col">
+                                <h6>Secure payment</h6>
+                                <ul>
+                                    <li><a href="#"><img src="assets/images/Visa.png"> Visa</a></li>
+                                    <li><a href="#"><img src="assets/images/Mastercard.png"> Mastercard</a></li>
+                                    <li><a href="#"><img src="assets/images/DinersClub.png"> Diners Club</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 footr_last_col">
+                    <div class="footer_col">
+                        <h6>Join our newsletter</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur. Egestas semper ut lectus auctor lacinia orci odio enim.</p>
+                        <input type="text" class="form-control" placeholder="Your mail">
+                        <button type="button" class="">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright_sec fl wf">
+            <div class="container">
+                <div class="copyright_inner fl wf">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>© Copyright 2024 - Carfacts</p>
+                            <ul>
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#">Terms of service</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="copyright_col">
+                                <p>Powered by:</p>
+                                <img src="assets/images/powerdby_1.png">
+                                <img src="assets/images/powerdby_2.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade signin_modal see_all_modal trim_modal" id="trim_modal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>What is trim and why is it important? </h4>
+                            <p>Many vehicle manufacturers make different versions of their models. These versions are often identified by letters (or a combination of letters). Examples are L for Luxury, S for Sport, X for off-road, G for an extended wheelbase and T for Turbo etc. These versions, or trims, can have different a different chassis, body-kit, engine, gearbox, suspension, interior finishing, and onboard equipment. These differences can have a considerable influence on the real market value of your vehicle, so it’s important to confirm which trim you are buying or selling. </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>How do I know the trim (or version)? </h4>
+                            <p>Most of the time, we can find the trim based on the VIN number you provided to us. If we cannot identify it, then you may find the trim letters on the vehicle (usually somewhere on the rear). You may also find it in the owner’s manual or on the original sales invoice. You can also often identify the trim if you know the vehicle’s specifics, like engine etc. If you are still unable to confirm the trim, then ask a specialized mechanic to help you. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="assets/js/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/language-select.js" type="text/javascript"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            disable: 'mobile',
+            duration: 600,
+            once: true,
+        });
+    </script>
+    <script>
+        var video = document.getElementById("bg-video");
+        var playPauseBtn = document.getElementById("playPauseBtn");
+
+        playPauseBtn.addEventListener("click", function() {
+            if (video.paused) {
+                video.play();
+                playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+            } else {
+                video.pause();
+                playPauseBtn.innerHTML = '<i class="far fa-play-circle"></i>';
+            }
+        });
+    </script>
+    
+    <script type="text/javascript">
+        $(document).on('ready', function() {
+            $(".brands_slick").slick({
+                dots: false,
+                infinite: true,
+                prevArrow: false,
+    nextArrow: false,
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                centerMode: true,
+            });
+
+        });
+    </script>
+    
+    <script type="text/javascript">
+        $(document).on('ready', function() {
+            $(".testimonials_slick").slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            });
+
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Profile</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href="assets/css/slick.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />-->
+    <script data-search-pseudo-elements="" defer=""
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Navbar-->
+
+    <nav class="navbar navbar-marketingg navbar-expand-lg navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <a class="navbar-brand text-white" href="index.html">
+                <img src="assets/images/Logo.svg" alt="">
+            </a>
+
+            <a class="navbar-toggler fr login_link fi fw-500 color-1c f-z-14" href="#" data-bs-toggle="modal"
+                data-bs-target="#modal_signin">
+                Sign in
+            </a>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+
+                <button class="navbar-toggler btn_close_nav" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <ul class="navbar-nav mx-auto ml-58">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sample Report</a></li>
+                    <li class="nav-item dropdown nav_dropdown navbar-toggler s_d">
+                        <a class="nav-link " href="#">
+                            Blog
+                            <span class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a class="dropdown-item" href="#">Buying Tips</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">VIN Check</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Used Car Market Report</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+                </ul>
+                <ul class="d-flex ms-auto mb-0 ml-0">
+                    <a class="login_link fi fw-500 color-1c f-z-14 h_m" href="#" data-bs-toggle="modal"
+                        data-bs-target="#modal_signin">
+                        Sign in
+                    </a>
+
+
+                    <a href="#" class="language_change" id="arabic" onclick="toggleLanguage('arabic')">
+                        <span class="arb">
+                            <img src="assets/images/arn.png" alt="العربية">
+                            العربية
+                        </span>
+                    </a>
+
+                    <a href="#" class="language_change" id="english" onclick="toggleLanguage('english')"
+                        style="display: none">
+                        <span class="eng">
+                            <img src="assets/images/enn.png" alt="English">
+                            ENG
+                        </span>
+                    </a>
+
+
+                    <a class="btn_head btn-teal fi fw-600 color-1c f-z-16" href="#">
+                        Get a report
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Header-->
+
+    <!--banner-->
+    <div class="top_banner_sec">
+
+        <div class="banner_overlap_section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <h1>Discover the best <br>value for your current<br> or future car</h1>
+                        <p>Get a detailed vehicle report on your car’s condition and value, to secure the<br> best deal
+                            when you buy or sell a car! Our easy-to-understand data will help you<br> avoid making
+                            decisions you’ll regret.</p>
+                        <div class="banner_report_form">
+                            <input type="text" class="form-control" placeholder="VIN number">
+                            <button type="button" class="btn-free-report">Get a free report</button>
+                        </div>
+                        <div class="pin_tabs">
+                            <a href="#">I don’t have VIN</a>
+                            <a href="#">What is VIN?</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner_section_half_full">
+            <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-lg-6 d-lg-block p_relative" data-aos="fade-up" data-aos-delay="100">
+                    <div class="banner_car_price">
+                        <p>Recommended Buying Price</p>
+                        <h6>125,000</h6>
+                        <p><span>AED</span></p>
+                    </div>
+                    <img class="img-fluid" src="assets/images/banner_image.svg" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="vehicle_report_section">
+        <div class="container">
+            <h3>Why Vehicle Report is your most<br> trusted source for car information</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="veh_rep_col">
+                        <img src="assets/images/report_icon_1.svg" alt="">
+                        <h4>Understand real market value</h4>
+                        <p>Let your decisions be guided by real-time insights on the car's worth, based on its
+                            condition, mileage, maintenance and more.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="veh_rep_col">
+                        <img src="assets/images/report_icon_2.svg" alt="">
+                        <h4>Get complete vehicle history</h4>
+                        <p>Everything you need to know about the car is in one place, including its international
+                            history - which means no nasty surprises!</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="veh_rep_col">
+                        <img src="assets/images/report_icon_3.svg" alt="">
+                        <h4>View key information at a glance</h4>
+                        <p>Your report comes in an easy visual format with clear takeaways so you can quickly grasp
+                            important details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--video section-->
+    <div class="home_video_sec">
+        <div class="container">
+            <h3>How our easy vehicle check history works</h3>
+            <div class="bg-video-wrap">
+                <video id="bg-video" src="https://www.w3schools.com/html/mov_bbb.mp4" loop muted paused
+                    poster="assets/images/video_placeholder.png"></video>
+                <button id="playPauseBtn"><i class="far fa-play-circle"></i></button>
+            </div>
+
+        </div>
+    </div>
+
+    <!--vehicle report section-->
+    <div class="free_repost fl wf">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 h_m">
+                    <div class="lft_odo_meter_col postion_r fl wf">
+                        <div class="accidental_odo_car">
+                            <h4>Dealer price</h4>
+                            <div class="odometer_price">
+                                <div class="odometer_price_overlay">
+                                    <h6>149,000 AED</h6>
+                                    <h6>99,500 AED</h6>
+                                </div>
+                                <img src="assets/images/odo-meter.png" alt="">
+                            </div>
+                            <h4>Market lowest price</h4>
+                        </div>
+                        <div class="accidental_icon">
+                            <img src="assets/images/accidental-car.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="free_repost_content fl wf">
+                        <h3>Get started with your free vehicle report</h3>
+                        <p>Need some quick insights? Get our top findings on the vehicle you are researching for no
+                            extra cost.</p>
+
+                        <div class="lft_odo_meter_col postion_r fl wf h_d s_m">
+                            <div class="accidental_odo_car">
+                                <h4>Dealer price</h4>
+                                <div class="odometer_price">
+                                    <div class="odometer_price_overlay">
+                                        <h6>149,000 AED</h6>
+                                        <h6>99,500 AED</h6>
+                                    </div>
+                                    <img src="assets/images/odo-meter.png" alt="">
+                                </div>
+                                <h4>Market lowest price</h4>
+                            </div>
+                            <div class="accidental_icon">
+                                <img src="assets/images/accidental-car.svg" alt="">
+                            </div>
+                        </div>
+
+                        <ul class="fl wf">
+                            <li>
+                                <img src="assets/images/check-icon.svg">
+                                Price range of vehicle
+                            </li>
+                            <li>
+                                <img src="assets/images/check-icon.svg">
+                                Check car records
+                            </li>
+                            <li>
+                                <img src="assets/images/check-icon.svg">
+                                Save time
+                            </li>
+                        </ul>
+
+                        <label>Enter VIN</label>
+                        <div class="banner_report_form">
+                            <input type="text" class="form-control" placeholder="VIN number">
+                            <button type="button" class="btn-free-report">Get a free report</button>
+                        </div>
+                        <div class="pin_tabs">
+                            <a href="#">I don’t have VIN</a>
+                            <a href="#">What is VIN?</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--power of data-->
+    <div class="free_repost power_of_data fl wf">
+        <div class="container">
+            <div class="power_of_data_content fl wf">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="free_repost_content fl wf">
+                            <h3>Unlock the full power of data with our full report</h3>
+                            <p>All for an affordable price! Be fully informed or pay the price of not knowing your
+                                vehicle history.</p>
+
+                            <div class="col-md-6 s_m h_d">
+                                <div class="row">
+                                    <div class="col-8 padd_0">
+                                        <div class="accidental_odo_car">
+                                            <h4>Recommended buying price</h4>
+                                            <div class="odometer_2_price">
+                                                <div class="odometer_2_price_overlay">
+                                                    <h6>125,000 <br> <span>AED</span></h6>
+                                                </div>
+                                                <img src="assets/images/odo-meter-2.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 padd_0">
+                                        <div class="accidental_odo_car markeet_availability">
+                                            <h4>Market availability</h4>
+                                            <img src="assets/images/odo-meter-3.png" alt="">
+                                            <h4>Average day to sell</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="power_data_car fl wf text-center">
+                                    <img src="assets/images/power-data-car.png" alt="">
+                                </div>
+                            </div>
+
+                            <ul class="fl wf">
+                                <li>
+                                    <img src="assets/images/speedometer.png">
+                                    Exact market value of your car
+                                </li>
+                                <li>
+                                    <img src="assets/images/report-search.png">
+                                    Full history report
+                                </li>
+                                <li>
+                                    <img src="assets/images/key-hand.png">
+                                    Market insights and finance offers
+                                </li>
+                                <li>
+                                    <img src="assets/images/lightbulb.png">
+                                    Tips and suggestions
+                                </li>
+                            </ul>
+
+                            <div class="data_buttons fl wf">
+                                <a href="#" class="report_btn">Get a full report for AED 79</a>
+                                <a href="#">View prices</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 h_m">
+                        <div class="row">
+                            <div class="col-md-8 padd_0">
+                                <div class="accidental_odo_car">
+                                    <h4>Recommended buying price</h4>
+                                    <div class="odometer_2_price">
+                                        <div class="odometer_2_price_overlay">
+                                            <h6>125,000 <br> <span>AED</span></h6>
+                                        </div>
+                                        <img src="assets/images/odo-meter-2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 padd_0">
+                                <div class="accidental_odo_car markeet_availability">
+                                    <h4>Market availability</h4>
+                                    <img src="assets/images/odo-meter-3.png" alt="">
+                                    <h4>Average day to sell</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="power_data_car fl wf text-center">
+                            <img src="assets/images/power-data-car.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--research section-->
+    <div class="research_section fl wf">
+        <div class="container">
+            <h3>Skip the research—we've got your car<br> history essentials covered</h3>
+            <p>We collect data info from North America, Canada, Europe, and local authorities. It helps you understand
+                if a car has been in accidents, how well it's been cared for, and how many people owned it.</p>
+            <div class="countries_col fl wf">
+                <span class="fl">
+                    <img src="assets/images/countries.png" alt="">
+                </span>
+                <p><span>+</span> We check 900+ data sources in <strong>35 countries.</strong></p>
+            </div>
+        </div>
+        <div class="research_map fl wf text-center">
+            <img src="assets/images/map.svg" alt="">
+        </div>
+    </div>
+
+    <!--section recomended car-->
+    <div class="section_recomended_car fl wf">
+        <div class="banner_overlap_section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <h3>Unlock savings in your car <br>ownership journey with our <br>Vehicle Report</h3>
+                        <p>Enjoy significant savings of up to <strong>25% a month</strong> through the length of your
+                            car ownership.</p>
+                        <p>Get a Vehicle Report today and make the informed decisions that help you save more on your
+                            investment.</p>
+                    </div>
+                    <div class="col-lg-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner_section_half_full fl wf">
+            <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-lg-6 d-lg-block p_relative" data-aos="fade-up" data-aos-delay="100">
+                    <div class="banner_car_price recomended_car_price">
+                        <p>Recommended Buying Price</p>
+                        <h6>125,000</h6>
+                        <p><span>AED</span></p>
+                    </div>
+                    <img class="img-fluid" src="assets/images/recomended_car.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="recomended_col">
+                        <img src="assets/images/coins-stacked.png">
+                        <h5>Discover hidden maintenance costs</h5>
+                        <p>Know about the car’s history and condition in advance and save up to <strong>15%</strong> on
+                            the maintenance cost during your ownership.</p>
+                        <h6>Save up to <strong>15%</strong></h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="recomended_col">
+                        <img src="assets/images/key-hand-yellow.png">
+                        <h5>Negotiate better financing</h5>
+                        <p>Average EMI: 1950 per month <br>With Vehicle Report: 1799 per month</p>
+                        <ul class="fl wf">
+                            <li>
+                                <img src="assets/images/check-icon.svg">
+                                Flat rate
+                            </li>
+                            <li>
+                                <img src="assets/images/check-icon.svg">
+                                Flexible downpayment
+                            </li>
+                            <li>
+                                <img src="assets/images/check-icon.svg">
+                                Deferred payments
+                            </li>
+                            <li>
+                                <img src="assets/images/check-icon.svg">
+                                Addons
+                            </li>
+                        </ul>
+                        <h6>Save up to 390 AED <span>-20%</span></h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="recomended_col">
+                        <img src="assets/images/shield-tick.png">
+                        <h5>More accurate insurance premiums</h5>
+                        <p>Average spend: 140 per month <br>With Vehicle Report: 110 per month</p>
+                        <ul class="fl wf">
+                            <li>
+                                <img src="assets/images/check-icon.svg">
+                                Roadside assistance
+                            </li>
+                            <li>
+                                <img src="assets/images/check-icon.svg">
+                                Car hire
+                            </li>
+                            <li>
+                                <img src="assets/images/check-icon.svg">
+                                Quality garages
+                            </li>
+                            <li>
+                                <img src="assets/images/check-icon.svg">
+                                Minimum excess
+                            </li>
+                            <li>
+                                <img src="assets/images/check-icon.svg">
+                                Oman cover
+                            </li>
+                        </ul>
+                        <h6>Save up to 35 AED <span>-25%</span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--industry exp-->
+    <div class="industry_exp fl wf">
+        <div class="container">
+            <div class="industry_exp_content">
+                <h3>Our extensive auto industry experience<br> has elevated our vehicle reports to a<br> global standard
+                </h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="industry_exp_col">
+                            <h5>12+</h5>
+                            <h6>Years of experience</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="industry_exp_col">
+                            <h5>20,000+</h5>
+                            <h6>Vehicle reports</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="industry_exp_col">
+                            <h5>9,000+</h5>
+                            <h6>Loyal customers</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--markeet insight-->
+    <div class="sec_market_insight fl wf">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="market_insight_content fl wf">
+                        <h3>Market insights in the car industry are like a roadmap for success</h3>
+                        <p>Gain a competitive advantage in the automotive industry by leveraging market insights, which
+                            offer a clear understanding of consumer trends, competitor strategies, and economic factors,
+                            empowering you to make informed decisions and navigate challenges for long-term viability in
+                            the market.</p>
+                        <a href="#">View sample report <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="market_col fl wf">
+                                <img src="assets/images/markeet_icon_1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="market_col fl wf">
+                                <img src="assets/images/markeet_icon_2.png" alt="">
+                                <div class="overlay_insight">
+                                    <p><strong>Save up to 30%</strong> by avoiding mechanic and bank check up.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="market_col fl wf black">
+                                <img src="assets/images/markeet_icon_3.png" alt="">
+                                <div class="overlay_insight">
+                                    <p>Get exclusive <strong>financing deals and insurance quotes</strong> for your new
+                                        car.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="market_col fl wf">
+                                <img src="assets/images/markeet_icon_4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec_market_insight sec_market_insight2 fl wf">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 order-last">
+                    <div class="market_insight_content fl wf">
+                        <h3>Tips & suggestions to get<br> most of your next car deal</h3>
+                        <p>We simplify car financing and insurance with a user-friendly platform, offering tailored
+                            guidance and resources for optimal deals. Whether buying a new vehicle or optimising
+                            policies, trust us for smart financial decisions and peace of mind on the road.</p>
+                        <div class="data_buttons fl wf">
+                            <a href="#" class="report_btn">Get a full report for AED 79</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 ">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="market_col fl wf">
+                                <img src="assets/images/markeet_icon_5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="market_col fl wf black">
+                                <img src="assets/images/markeet_icon_6.png" alt="">
+                                <div class="overlay_insight">
+                                    <p><strong>Fast and easy process</strong> — no research required.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="market_col fl wf ">
+                                <img src="assets/images/markeet_icon_7.png" alt="">
+                                <div class="overlay_insight">
+                                    <p>Tailored guidance for <strong>smart financial decisions.</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="market_col fl wf">
+                                <img src="assets/images/markeet_icon_8.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--brands slider-->
+    <div class="brands_slider fl wf">
+        <div class="container">
+            <h3>Our trusted partners</h3>
+            <section class="brands_slick slider">
+                <div class="brands_col">
+                    <img src="assets/images/brand_icon_1.png" alt="">
+                </div>
+                <div class="brands_col">
+                    <img src="assets/images/brand_icon_2.png" alt="">
+                </div>
+                <div class="brands_col">
+                    <img src="assets/images/brand_icon_3.png" alt="">
+                </div>
+                <div class="brands_col">
+                    <img src="assets/images/brand_icon_4.png" alt="">
+                </div>
+                <div class="brands_col">
+                    <img src="assets/images/brand_icon_5.png" alt="">
+                </div>
+                <div class="brands_col">
+                    <img src="assets/images/brand_icon_6.png" alt="">
+                </div>
+                <div class="brands_col">
+                    <img src="assets/images/brand_icon_1.png" alt="">
+                </div>
+                <div class="brands_col">
+                    <img src="assets/images/brand_icon_2.png" alt="">
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!--testimonials slider-->
+    <div class="setion_testimonials_slider fl wf">
+        <div class="container">
+            <h3>Vehicle Report reviews</h3>
+            <section class="testimonials_slick slider">
+                <div class="slick_col">
+                    <div class="testimonials_col">
+                        <p>I was impressed with the thoroughness of the vehicle report I received. It provided a
+                            detailed history, helping me make an informed decision about my purchase. Highly
+                            recommended!</p>
+                        <div class="testimonials_left fl wf">
+                            <img src="assets/images/adam.png" alt="">
+                            <div class="adam_rating">
+                                <h6>Adam Asaad</h6>
+                                <span class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slick_col">
+                    <div class="testimonials_col">
+                        <p>The comprehensive vehicle report was a game-changer for me. It uncovered details about the
+                            car's past that I wouldn't have known otherwise. This service is a must for anyone looking
+                            to buy with confidence.</p>
+                        <div class="testimonials_left">
+                            <img src="assets/images/adam.png" alt="">
+                            <div class="adam_rating">
+                                <h6>Adam Asaad</h6>
+                                <span class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slick_col">
+                    <div class="testimonials_col">
+                        <p>Thanks to the detailed vehicle report, I avoided a potential scam and negotiated a better
+                            deal. The insights provided were invaluable, and I can't imagine buying a car without this
+                            service in the future.</p>
+                        <div class="testimonials_left">
+                            <img src="assets/images/adam.png" alt="">
+                            <div class="adam_rating">
+                                <h6>Adam Asaad</h6>
+                                <span class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slick_col">
+                    <div class="testimonials_col">
+                        <p>I was impressed with the thoroughness of the vehicle report I received. It provided a
+                            detailed history, helping me make an informed decision about my purchase. Highly
+                            recommended!</p>
+                        <div class="testimonials_left">
+                            <img src="assets/images/adam.png" alt="">
+                            <div class="adam_rating">
+                                <h6>Adam Asaad</h6>
+                                <span class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!--next car deal-->
+    <div class="next_car_deal fl wf">
+        <div class="container">
+            <div class="next_car_deal_content fl wf">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h5>Ready to elevate your next car <br>deal with <span>Vehicle Report</span></h5>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="data_buttons fl wf">
+                            <a href="#" class="report_btn">Get a full report for AED 79</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer_sec fl wf">
+        <div class="container top_footer_col">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-3 footr_first_col">
+                            <div class="footer_col">
+                                <a href="#" class="footer_logo">
+                                    <img src="assets/images/logo.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer_col">
+                                <h6>Report</h6>
+                                <ul>
+                                    <li><a href="#">Get a report</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Sample report</a></li>
+                                    <li><a href="#">Buying tips</a></li>
+                                    <li><a href="#">Used market report</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="footer_col">
+                                <h6>Support</h6>
+                                <ul>
+                                    <li><a href="#">VIN check</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="footer_col">
+                                <h6>Follow us on</h6>
+                                <ul>
+                                    <li><a href="#"><img src="assets/images/facebook.png"> Facebook</a></li>
+                                    <li><a href="#"><img src="assets/images/linkedin.png"> LinkedIn</a></li>
+                                    <li><a href="#"><img src="assets/images/twitter.png"> X</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="footer_col">
+                                <h6>Secure payment</h6>
+                                <ul>
+                                    <li><a href="#"><img src="assets/images/Visa.png"> Visa</a></li>
+                                    <li><a href="#"><img src="assets/images/Mastercard.png"> Mastercard</a></li>
+                                    <li><a href="#"><img src="assets/images/DinersClub.png"> Diners Club</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 footr_last_col">
+                    <div class="footer_col">
+                        <h6>Join our newsletter</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur. Egestas semper ut lectus auctor lacinia orci odio
+                            enim.</p>
+                        <input type="text" class="form-control" placeholder="Your mail">
+                        <button type="button" class="">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright_sec fl wf">
+            <div class="container">
+                <div class="copyright_inner fl wf">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>© Copyright 2024 <br>- Vehicle Report</p>
+                            <ul>
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#">Terms of service</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="copyright_col">
+                                <p>Powered by:</p>
+                                <img src="assets/images/powerdby_1.png">
+                                <img src="assets/images/powerdby_2.png">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="assets/js/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/language-select.js" type="text/javascript"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            disable: 'mobile',
+            duration: 600,
+            once: true,
+        });
+    </script>
+    <script>
+        var video = document.getElementById("bg-video");
+        var playPauseBtn = document.getElementById("playPauseBtn");
+
+        playPauseBtn.addEventListener("click", function () {
+            if (video.paused) {
+                video.play();
+                playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+            } else {
+                video.pause();
+                playPauseBtn.innerHTML = '<i class="far fa-play-circle"></i>';
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+            $(".brands_slick").slick({
+                dots: false,
+                infinite: true,
+                prevArrow: false,
+                nextArrow: false,
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                centerMode: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 2
+                        }
+                    }
+                ]
+            });
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+            $(".testimonials_slick").slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            centerPadding: '40px',
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+
+        });
+    </script>
+
+
+    <script>
+        function toggleLanguage(language) {
+            if (language === 'arabic') {
+                document.getElementById('arabic').style.display = 'none';
+                document.getElementById('english').style.display = 'inline-block';
+            } else {
+                document.getElementById('english').style.display = 'none';
+                document.getElementById('arabic').style.display = 'inline-block';
+            }
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
